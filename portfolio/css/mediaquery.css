@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+/*미디어쿼리*/
+@media(max-width:1320px) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:1280px) {
+    .portfolio .pf_chart .swiper-container {
+        height: 540px;
+    }
+
+}
+
+@media(max-width:1220px) {
+    .header .h_text h2 {
+        padding: 20px;
+    }
+
+    .header .h_title .t_text {
+        width: 100%;
+    }
+
+    #webapp_cover {
+        transform: scale(1.2);
+        margin: 30px 20px
+    }
+
+    .portfolio .pf_chart .swiper-container {
+        height: 500px;
+    }
+
+    .swiper-container2.ph .poster > div > a {
+
+        width: 20%;
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+
+    .portfolio .pf_chart .swiper-container {
+        height: 430px;
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion .motion_md {
+        margin-top: 10px;
+    }
+
+    .swiper-container2.ph .poster > div > a {
+
+
+        margin-left: 40px
+    }
+
+    .skill .col {
+        margin-right: 50px;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .skill .col {
+        margin-right: 30px;
+    }
+
+    .portfolio .pf_chart .swiper-container {
+        height: 380px;
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion {
+        font-size: 18px;
+
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion h2 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .swiper-container2.ph .poster > div > a {
+
+
+        margin-left: 30px
+    }
+}
+
+@media (max-width: 768px) {
+    .header .h_title .t_text p {
+        font-size: 23px;
+    }
+
+    .header .h_title .t_text .sub_text {
+        font-size: 15px;
+    }
+
+    .header .h_title .t_text .sub_text2 {
+        font-size: 15px;
+    }
+
+    .header .logo {}
+
+    .header .border {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .header .border::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header .border .b_top {
+        font-size: 40px;
+        width: 80px;
+        top: 80px;
+        left: -50px;
+    }
+
+    .header .border .b_md {
+        font-size: 40px;
+        top: 70px;
+        left: 20px;
+    }
+
+    .header .border .bt {
+        font-size: 40px;
+        width: 170px;
+        top: 60px;
+        left: 120px;
+    }
+
+
+    #webapp_cover {
+        transform: scale(1.2);
+        margin: 30px 20px
+    }
+
+    .about .photo {
+        width: 100%;
+    }
+
+    .about .profile_box {
+        width: 100%;
+        margin-top: 40px;
+
+    }
+
+    .about .photo .photo_list img {
+        width: 300px;
+    }
+
+    .about .profile_box div {
+        padding-left: 20px;
+    }
+
+    .skill .col {
+        margin: 5% 0 0 20%;
+    }
+
+    .portfolio .pf_chart .swiper-container {
+        height: 300px;
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion {
+        font-size: 16px;
+
+
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion h2 {
+        display: none;
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion .motion_md {
+        display: none;
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion span a {
+        margin-top: 50px;
+        width: 100px;
+
+    }
+
+    .swiper-container2.ph .poster > div > a {
+
+
+        margin-left: 30px
+    }
+}
+
+@media (max-width: 600px) {
+
+    #header {
+        padding-bottom: 100px;
+    }
+
+    .header .h_text h2 {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .header .h_title .t_text .typing {
+        font-size: 16px;
+    }
+
+    .header .h_title .t_text .sub_text {
+        font-size: 12px;
+    }
+
+    .header .h_title .t_text .sub_text2 {
+        font-size: 12px;
+    }
+
+    .header .mouse_box {
+        display: none;
+
+    }
+    .about .bt::before{   
+        content: '';
+        width: 15px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        transform: translateX(-12px)rotate(30deg);
+    }
+    .about .bt::after{
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 2px;
+        transform: translateX(0)rotate(-30deg);
+        background-color: #000;
+    }
+    #skill .bt::before,
+    .contact .bt::before{   
+        content: '';
+        width: 15px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        transform: translateX(-12px)rotate(30deg);
+    }
+    #skill .bt::after,
+    .contact .bt::after{
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 2px;
+        transform: translateX(0)rotate(-30deg);
+        background-color: #fff;
+    }
+
+    #webapp_cover {
+        transform: scale(1);
+        margin: 30px 20px
+    }
+
+    .about h2,
+    #skill h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .about h3 {
+        font-size: 20px;
+    }
+
+    .about ul li {
+        font-size: 12px;
+    }
+
+    .about .photo .photo_list img {
+        height: auto;
+    }
+
+    .about .bt {
+        margin-bottom: 40px;
+    }
+
+    .skill .col {
+        margin: 5% 2% 0 18%;
+    }
+    .portfolio .pf_title{
+        padding: 40px 0 40px 0; 
+    }
+    .portfolio .pf_title ul{
+        margin: 40px
+    }
+    
+/*
+    .portfolio .pf_chart .swiper-container {
+        height: 240px;
+        
+    }
+*/
+
+/*
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion span a {
+        margin-top: 38px;
+    }
+*/
+
+/*
+    .swiper-container2.ph .poster > div > a {
+
+
+        margin-left: 50px
+    }
+*/
+
+    #footer p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        display: none;
+    }
+
+    .header .mouse_box {
+        margin-top: 50px;
+
+        padding-bottom: 10px;
+    }
+
+    .header .mouse_box .mouse {}
+
+    .skill .col {
+        margin: 6% 4% 0 11%;
+
+    }
+
+    .skill .col span {
+        font-size: 18px
+    }
+
+    .portfolio .pf_chart .swiper-container {
+        height: 200px;
+    }
+
+    .portfolio .pf_chart .swiper-container .swiper-slide .motion span a {
+        margin-top: 28px;
+        font-size: 14px;
+        width: 60px
+    }
+
+    .swiper-container2.ph .poster > div > a {
+
+        width: 100%;
+        margin: 0
+    }
+
+
+    .portfolio .pf_title ul li {
+        font-size: 0.8em;
+        width: 50px
+    }
+
+
+
+}
+
+@media (max-width: 320px) {
+    .skill .col {
+
+        margin-left: 8%;
+    }
+
+    .portfolio .pf_title ul li {
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+}

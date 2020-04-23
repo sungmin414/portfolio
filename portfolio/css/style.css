@@ -1,0 +1,826 @@
+@charset "utf-8";
+
+/*폰트*/
+@font-face {
+    font-family: "UhBee_ZZIBA";
+    src: url(../fonts/UhBee_ZZIBA.ttf);
+}
+
+/*레이아웃*/
+#wrap {}
+
+#header {
+    background: url(../img/bg2.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#nav {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+#about {}
+
+#skill {
+    background-color: #151212;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#portfolio {
+    ;
+    position: relative;
+
+}
+
+#contact {
+    background: url(../img/bg8.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+
+#footer {
+    background: #0d0d0d;
+    padding: 50px;
+}
+
+
+/*컨테이너*/
+.container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+
+
+}
+
+/*header*/
+.header {
+    position: relative;
+    font-family: "UhBee_ZZIBA";
+
+}
+
+.header h2 {
+    color: #E5EDEF;
+}
+
+.header .h_text {
+    text-align: left;
+    display: inline-block;
+}
+
+.header .h_text h2 {
+    padding: 40px 40px;
+    font-size: 40px;
+    text-shadow: 1px 2px 1px;
+    float: left;
+}
+
+
+.header .h_menu {
+    color: #E5EDEF;
+    float: right;
+    padding: 40px;
+    display: block;
+}
+
+
+
+.header .h_title {
+    clear: both;
+    text-align: center;
+    color: #E5EDEF;
+}
+
+.header .h_title .t_text {
+    margin-top: 50px;
+}
+
+.header .h_title .t_text p {
+    font-size: 30px;
+}
+
+.header .h_title .t_text .typing_text {
+    display: none;
+}
+
+.header .h_title .t_text .typing {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.header .h_title .t_text .typing::after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    animation-name: cusor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    font-size: 32px;
+}
+
+
+
+.header .h_title .t_text .sub_text {
+    font-size: 20px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+
+.header .h_title .t_text .sub_text2 {
+    font-size: 20px;
+    animation-name: move2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+
+
+.header .logo {
+    text-align: center;
+
+}
+
+.header .border::before {
+    position: relative;
+}
+
+.header .border {
+    margin: 12% auto;
+    width: 300px;
+    height: 300px;
+    transform: rotate(46deg);
+    border: 1px solid #fff;
+
+}
+
+.header .border::after {
+    position: absolute;
+    content: '';
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    transform: translateX(0);
+    animation-name: borderclale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+.header .border .b_top {
+    width: 120px;
+    position: absolute;
+    transform: rotate(-46deg);
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.74);
+    left: -20%;
+    top: 40%
+}
+
+.header .border .b_md {
+    color: #E5EDEF;
+    font-size: 50px;
+    position: absolute;
+    transform: rotate(-46deg);
+    top: 35%;
+    left: 16%;
+
+}
+
+.header .border .b_bt {
+    width: 200px;
+    position: absolute;
+    transform: rotate(-46deg);
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.74);
+    left: 60%;
+    top: 40%
+}
+
+.header .mouse_box {
+
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+
+.header .mouse_box .mouse {
+    margin: 0px auto;
+    width: 32px;
+    height: 50px;
+    transform: translateY(0);
+    border: 1px solid #fff;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+
+.header .mouse_box .mouse h1 {
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -4px);
+    top: 10px;
+    transition: all 0.3s ease;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border-radius: 40%;
+}
+
+
+
+
+
+/*nav*/
+
+.webapp_cover_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+.webapp_cover_area .menu_li_area {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: none;
+}
+
+.webapp_cover_area .menu_li {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.webapp_cover_area .menu_li a {
+    position: relative;
+    color: #fff;
+}
+
+.webapp_cover_area .menu_li li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #0089ff;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.webapp_cover_area .menu_li li:hover a::after {
+    width: 100%
+}
+
+
+
+#webapp_cover {
+    z-index: 2;
+    transform: scale(1.4);
+    position: absolute;
+    right: 0;
+    margin: 50px 40px;
+    width: 39px;
+}
+
+
+
+#menu_button {
+    width: 40px;
+    overflow: hidden;
+}
+
+#menu_checkbox {
+    display: none;
+}
+
+
+
+#menu_label {
+    position: relative;
+    display: block;
+    height: 29px;
+    cursor: pointer;
+}
+
+#menu_label:before,
+#menu_label:after,
+.menu_text_bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+#menu_label:before,
+#menu_label:after {
+    content: '';
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+}
+
+#menu_label:before {
+    top: 0;
+}
+
+#menu_label:after {
+    top: 12px;
+}
+
+.menu_text_bar {
+    top: 24px;
+}
+
+.menu_text_bar:before {
+    content: 'MENU';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+#menu_checkbox:checked + #menu_label:before {
+    left: -40px;
+}
+
+#menu_checkbox:checked + #menu_label:after {
+    left: 41px;
+}
+
+#menu_checkbox:checked + #menu_label .menu_text_bar:before {
+    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+}
+
+
+
+/*about*/
+
+.about {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.about h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 50px 0 0;
+    display: block;
+}
+
+
+.about .bt::before {
+    content: '';
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transform: translateX(-17px)rotate(30deg);
+}
+
+.about .bt {
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    animation-name: bt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.about .bt::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 2px;
+    transform: translateX(1px)rotate(-30deg);
+    background-color: black;
+
+}
+
+.about h3 {
+    font-size: 22px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.about h3::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 6px;
+    background-color: rgb(43, 203, 194);
+    top: 12px;
+    left: 0;
+    border-radius: 10px;
+
+}
+
+.about div li {
+    font-size: 16px;
+}
+.about div ul li{
+    margin-top: 10px;
+}
+
+.about .photo {
+    width: 50%;
+    float: left;
+}
+
+.about .photo .horizon,
+.about .profile_box .horizon {
+    opacity: 0;
+}
+
+.about .photo .photo_list {
+    width: 100%;
+}
+
+.about .photo .photo_list img {
+    width: 400px;
+    height: 500px;
+    border-radius: 4%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+    animation-name: photo_move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+
+
+
+.about .profile_box {
+    float: left;
+    width: 50%;
+}
+
+.about .profile_box div {
+    padding-left: 100px;
+}
+
+
+.about .profile_box .profile {
+    animation-name: div_move;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .profile_box .history {
+    padding-top: 30px;
+    animation-name: div_move;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/*skill*/
+
+#skill h2 {
+    font-size: 40px;
+    color: #fff;
+    display: block;
+
+}
+
+.bt::before {
+    content: '';
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-17px)rotate(30deg);
+}
+
+.bt {
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    animation-name: bt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+.bt::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 2px;
+    transform: translateX(1px)rotate(-30deg);
+    background-color: #fff;
+}
+
+
+#skill .row {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+#skill .row .skill {
+    display: inline-block;
+
+}
+
+.skill .col {
+    margin-right: 100px;
+}
+
+.skill .col:last-child {
+    margin-right: 0;
+}
+
+.skill .col span {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/*포트폴리오*/
+
+.portfolio h2 {
+    font-size: 1.5em;
+}
+
+.portfolio .pf_title {
+    text-align: center;
+    padding: 100px;
+}
+
+.portfolio .pf_title ul {
+    margin-top: 100px;
+
+}
+
+.portfolio .pf_title ul li {
+    display: inline-block;
+    margin-right: 2%;
+    border: 1px solid #886868;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+}
+
+.portfolio .pf_title ul li:last-child {
+    margin-right: 0;
+}
+
+.portfolio .pf_title ul li a {
+    display: block;
+}
+
+
+.portfolio .pf_chart {
+    position: relative;
+    padding-bottom: 100px;
+
+}
+
+
+.portfolio .pf_chart .swiper-container {
+    width: 100%;
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide {
+    
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    height: calc((98% - 30px) / 2);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.portfolio .pf_chart .swiper-container .swiper-slide .poster img {
+    background-size: cover
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide .motion {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 102%;
+    top: 0;
+    left: 0;
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide .motion h2 {
+
+    width: 100%;
+    margin-top: 14%;
+   
+    text-align: center;
+    transform: translateY(30px);
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide .motion .motion_md {
+    width: 0%;
+    height: 1px;
+    margin: 20px auto 30px;
+    background-color: #fff;
+    display: block;
+    opacity: 0
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide .motion span {
+    text-align: center;
+    display: block;
+
+
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide .motion span a {
+    display: inline-block;
+    background: #fff;
+    color: #917a7a;
+    border: 1px solid #222222;
+    width: 120px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(-30px);
+    font-family: "UhBee_ZZIBA";
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide .motion span a:hover {
+    background: #000000;
+    color: #fff;
+    border: 1px solid #383838;
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide:hover img {
+    filter: brightness(50%);
+    transform: scale(1.1);
+
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide:hover .motion .motion_md {
+    opacity: 1;
+    width: 70%;
+    transition: all .4s ease-in;
+}
+
+.portfolio .pf_chart .swiper-container .swiper-slide:hover .motion,
+.portfolio .pf_chart .swiper-container .swiper-slide:hover .motion h2,
+.portfolio .pf_chart .swiper-container .swiper-slide:hover .motion span a {
+    transition: all .4s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.portfolio .pf_chart .swiper-container .swiper-button-prev {
+    left: 0;
+    top: 48%;
+    transform: translateY(48%)
+}
+
+.portfolio .pf_chart .swiper-container .swiper-button-next {
+    right: 0;
+    top: 48%;
+    transform: translateY(48%)
+}
+
+
+
+/*contact*/
+.cont_bg {
+    overflow: hidden;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: #fff;
+}
+
+.contact h2 {
+    padding: 100px 0 10px;
+    font-size: 40px;
+
+}
+
+.contact span,
+.contact i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact .bt::before {
+    content: '';
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-17px)rotate(30deg);
+}
+
+.contact .bt {
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    animation-name: bt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.contact .bt::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 2px;
+    transform: translateX(1px)rotate(-30deg);
+    background-color: #fff;
+}
+
+.contact #disqus_thread {
+    margin-top: 60px;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 60px;
+}
+
+
+/*footer*/
+#footer p {
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+}
+
+
