@@ -112,3 +112,5 @@ $('#menu_checkbox').click(function () {
 $(window).ready(function () {
     $('.horizon').horizon();
 });
+
+
